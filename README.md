@@ -1,6 +1,6 @@
 # Use Case Visualizer
 
-Visualizador interactivo de casos de uso de ciberseguridad basado en el framework MITRE ATT&CK. Permite visualizar, gestionar y exportar casos de uso con una interfaz con una red de nodos interactiva que permite entender las relacciones entre cada caso de uso.
+Visualizador interactivo de casos de uso de ciberseguridad basado en el framework MITRE ATT&CK. Permite visualizar, gestionar y exportar casos de uso con una interfaz con una red de nodos interactiva que permite entender las relaciones entre cada caso de uso.
 
 ## Características
 
@@ -39,6 +39,5 @@ src/
 └── index.tsx           # Entrada de la aplicación
 ```
 
-## Almacenamiento de Datos
 
-Los casos de uso se almacenan automáticamente en el localStorage del navegador. Los datos persisten entre sesiones.
+*Los casos de uso cargados se almacenan automáticamente en el localStorage del navegador. Los datos persisten entre sesiones.*
