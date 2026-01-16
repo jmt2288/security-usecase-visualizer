@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Use Case Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#001923',   // Azul oscuro
+                turq: '#00B0BD',   // Turquesa
+                grey: '#E3E2DA',   // Gris cerámica
+                amazon: '#004254', // Azul Amazónico
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        /* Main Gradient: Ceramic Grey to White */
+        background: linear-gradient(to bottom, #E3E2DA, #ffffff);
+        color: #001923; /* Dark Blue text */
+        min-height: 100vh;
+      }
+      /* Custom Scrollbar for Light Theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #E3E2DA; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #00B0BD; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #004254; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0",
+    "html2canvas": "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/+esm"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

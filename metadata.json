@@ -1,0 +1,5 @@
+{
+  "name": "UseCase Visualizer",
+  "description": "Interactive cybersecurity use case catalog mapped to MITRE ATT&CK tactics.",
+  "requestFramePermissions": []
+}
