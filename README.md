@@ -16,12 +16,18 @@ Visualizador interactivo de casos de uso de ciberseguridad basado en el framewor
 
 ## Instalación y Ejecución
 
-1. **Instalar dependencias:**
+1.**Instalación del código**
+   ```bash
+   git clone https://github.com/jmt2288/security-usecase-visualizer.git
+   cd security-usecase-visualizer
+   ```
+   
+2. **Dependencias:**
    ```bash
    npm install
    ```
 
-2. **Ejecutar:**
+3. **Ejecutar:**
    ```bash
    npm run dev
    ```
