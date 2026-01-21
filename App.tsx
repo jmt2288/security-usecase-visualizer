@@ -55,7 +55,7 @@ function App() {
   const categoryColors = useMemo(() => {
     const categories = Array.from(new Set(data.map(uc => uc.category || 'Unknown')));
     const mapping: Record<string, string> = {};
-    categories.forEach((cat, index) => {
+    categories.forEach((cat: string, index) => {
       mapping[cat] = COLOR_PALETTE[index % COLOR_PALETTE.length];
     });
     return mapping;
@@ -131,7 +131,7 @@ function App() {
         </div>
         
         <div className="flex items-center gap-6">
-            <div className="hidden lg:flex gap-4 text-sm text-gray-200 font-medium overflow-x-auto max-w-xl px-2 py-1 scrollbar-hide">
+            <div className="hidden lg:flex gap-4 text-sm text-gray-200 font-medium overflow-x-auto px-2 py-1 scrollbar-hide">
                 {Object.entries(categoryColors).map(([cat, color]) => (
                   <div key={cat} className="flex items-center gap-2 whitespace-nowrap">
                     <span className="w-2.5 h-2.5 rounded-full ring-1 ring-white/20" style={{ backgroundColor: color }}></span> {cat}
